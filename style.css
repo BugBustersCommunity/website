@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+body{
+    background-color: #CAF0F8;
+}
+nav{
+    background-color: #48CAE4 !important;
+}
+.myteam{
+    display: grid;
+    place-items: center;
+}
+.aim1{
+    margin: 5% 10%;
+}
+.aim ul li{
+    color: #023E8A;
+    font-size: 25px;
+    font-family: "Zilla Slab", serif;
+}
+.aim{
+    color: #023E8A;
+    font-size: 25px;
+    font-family: "Zilla Slab", serif;
+}
+.card {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 20px 20px 60px #48CAE4, -20px -20px 60px #ffffff;
+    border: none
+}
+
+.card img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+}
+
+.neo-button:active {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
+}
+
+.fa-facebook {
+    color: #3b5998
+}
+
+.fa-linkedin {
+    color: #0077b5
+}
+
+.fa-google {
+    color: #dc4e41
+}
+
+.fa-youtube {
+    color: #cd201f
+}
+
+.fa-twitter {
+    color: #55acee
+}
+
+/*footer*/
+.fa-linkedin{
+    cursor: pointer;
+    color: #0497f8;
+    color: #c5daf5;
+    text-shadow: 0 0 10px rgb(0, 183, 255);
+  }
+  
+  .fa-instagram-square{
+    cursor: pointer;
+    color: #ff10c3;
+    color: #efc5f5;
+    text-shadow: 0 0 10px rgb(247, 8, 8);
+  }
+  
+  .fa-facebook-square{
+    cursor: pointer;
+    color: #0562ec;
+    color: #679afa;
+    text-shadow: 0 0 10px rgb(7, 43, 145);
+  }
+  
+  .fa-twitter-square{
+    cursor: pointer;
+    color: #0497f8;
+    color: #c5def5;
+    text-shadow: 0 0 10px rgb(3, 108, 156);
+  }
+  .textbox{
+     width: 60%;
+  }
+  i:hover{ 
+    transform: translateY(-10px) scale(1.2)
+  }
+  footer{
+    margin-bottom: 0;
+    color: white;
+    background-color: rgba(72, 202, 228,0.5);
+  }
+  footer h5{
+    font-family: 'Courgette', cursive;
+  }
