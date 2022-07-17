@@ -10,7 +10,7 @@ Remove this line and tell us how the code was tested.
 ## Checklist:
 Before you create this PR, confirm all the requirements listed below by checking the checkboxes `[x]`:
 
--   [ ] I have followed the [Contribution Guidelines]()while contributing.
+-   [ ] I have followed the [Contribution Guidelines]() while contributing.
 -   [ ] I have checked there aren't other open [Pull Requests](https://github.com/BugBustersCommunity/website/pulls) for the same update/change.
 -   [ ] I have made corresponding changes to the documentation.
 -   [ ] I have tested the code before submission.
