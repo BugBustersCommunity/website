@@ -1,8 +1,8 @@
-# Bug Busters Community Website 
+# Bug Busters Community Website
 
 ## About Bug Busters
 
-**Bug Busters** is an open-source community run by students for the students. Our aim is that no student should be left unknown about the opportunities going on let it be open source events, hackathons, internships, etc. We believe that every student must learn some skills and showcase them in their resume. Through this community, we want to reach every student and help them in enriching their careers.
+**Bug Busters** is an **open-source community** run by students for the students. Our aim is that no student should be left unknown about the opportunities going on let it be open source events, hackathons, internships, etc. We believe that every student must learn some skills and showcase them in their resume. Through this community, we want to reach every student and help them in enriching their careers.
 
 This repo contains the code used to create our website. Please visit [here](https://github.com/BugBustersCommunity) to check out our other open-source repos.
 
@@ -10,13 +10,17 @@ This repo contains the code used to create our website. Please visit [here](http
 
 ## 🛠️ Technology Stack
 
+<div align="left">
+
 <img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> 
 <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> 
 <img alt="Javascript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
+</div>
+
 ## How to **contribute**?
 
-If you're not comfortable with the command line, [here are tutorials using GUI tools.](#tutorials-using-other-tools). If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+If you're not comfortable with the command line, [here are tutorials using GUI tools.](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop). If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
@@ -86,7 +90,7 @@ git push -u origin <your_branch_name>
 
 **15** Voila! You have made a PR to Bug Buster's Community Website. Sit back patiently and relax while your PR is reviewed.
 
-<hr> 
+<hr>
 
 ## How to **run project the project**?
 
@@ -113,10 +117,18 @@ code .
 
 <hr>
 
+<h2 align="center"> Project Maintainers & Admins </h2>
 
-<h2 align=center> Project Maintainer & Admin </h2>
+<div align="center"> 
+    <a href="https://github.com/siddhi-244">
+    <img src="https://avatars.githubusercontent.com/u/69195262?v=4" width=100px height=100px />
+    </a>
+    <p align="center"> Siddhi Bhanushali </p>
+</div>
 
-<p align="center"> <a href="https://github.com/siddhi-244">
-<img src="https://user-images.githubusercontent.com/64035221/135665400-b5e1edbe-2164-414b-b4cc-7574d0cacaeb.png" width=100px height=100px />
-</a><p align="center"> Siddhi Bhanushali </p>
-
+<div align="center"> 
+    <a href="https://github.com/Aditi-Singh16">
+    <img src="https://avatars.githubusercontent.com/u/74586135?v=4" width=100px height=100px />
+    </a>
+    <p align="center"> Aditi Singh </p>
+</div>
