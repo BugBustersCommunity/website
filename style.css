@@ -12,6 +12,13 @@ body{
 nav{
     background-color: #48CAE4 !important;
 }
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+.navbar-toggler i:hover {
+    transform: none;
+}
 .myteam{
     display: grid;
     place-items: center;
