@@ -69,13 +69,13 @@ nav{
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
     box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
 }
-.neo-button:hover ,button {
-    background: linear-gradient(145deg, #f6eeee, #05788f);
+.neo-button:hover,button {
+    background: linear-gradient(145deg, white, rgb(45, 117, 217));
     background-color:black;
     transition: 0.7s;
 }
-.fa-facebook-f {
-    color: #3b5998 
+.fa-twitter {
+    color: #55acee
 }
 
 .fa-linkedin-in {
