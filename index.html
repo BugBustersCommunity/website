@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <title>Bug Busters</title>
 </head>
 <body>
@@ -14,6 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="#">
             <img src="./logo.jpeg" width="30px" height="30px" style="border-radius: 50%;"/>
@@ -149,62 +153,38 @@
     </div>
     <br>
     <br>
-    <div class="container my-5">
-        <footer class="text-center text-lg-start text-white">
-            <div class="container p-4 pb-0">
-                <section class="">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase">About Us</h5>
-                            <p>
-                                A community for the students, by the students, and of the students! We’re here to
-                                provide you with all the resources you’ll require in your journey, and mentor you to
-                                become the best of the best.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                            <h5>Useful Links</h5>
-                            <ul style="list-style-type: none ">
-                                <li>Explore Recipes</li>
-                                <li>Get Cooking Tips</li>
-                                <li>Recipe of the Day</li>
-                                <li>Add Recipe</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                            <div class="row title">
-                                <h5>Sign up For Our Newsletter</h5>
-                            </div>
-                            <div class="row textbox" style="margin: 10px auto; width: 100%">
-                                <input class="form-control" type="text"></input>
-                            </div>
-                            <div class="row">
-                                <button style=" margin:0px auto; width:30% " class="waves-effect homebtn btn">Sign up</button>
-                            </div>
-                        </div>
-
+    <!--footer-->
+    <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#">Explore Recipes</a></li>
+                            <li><a href="#">Get Cooking Tips</a></li>
+                            <li><a href="#">Recipe of the Day</a></li>
+                            <li><a href="#">Add Recipe</a></li>
+                        </ul>
                     </div>
-
-                </section>
-
-
-                <hr class="mb-4" />
-                <section class="mb-4 text-center p-3">
-
-                    <div class="row">
-                        <h5>Follow Us on</h5>
+                    <div class="col-md-6 item text">
+                        <h3>About Us</h3>
+                        <p>A community for the students, by the students, and of the students! We’re here to provide you with all the resources you’ll require in your journey, and mentor you to become the best of the best.</p>
                     </div>
-                    <div class="row icons">
-                        <div class="col s3" style="padding: 0; margin: 0 "><i class="fab fa-linkedin fa-2x"></i></div>
-                        <div class="col s3" style=" padding: 0; margin: 0 "><i class="fab fa-instagram-square fa-2x"></i></div>
-                        <div class="col s3" style="padding: 0; margin: 0 "><i class="fab fa-facebook-square fa-2x"></i></div>
-                        <div class="col s3" style="padding: 0; margin: 0 "><i class="fab fa-twitter-square fa-2x"></i></div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+
+                    <div class = "wrapper divtype">
+                      <input placeholder="Type your email ..." />
+                      <span> Subscribe </span>
                     </div>
-
-
-                </section>
-
+                    <div style="padding-left: 46% ;">
+                        <button class="button-for-footer">Submit</button>
+                    </div>
+                <p class="copyright">BugBusters © 2022</p>
             </div>
         </footer>
+    </div>
+    
 </body>
 </html>
