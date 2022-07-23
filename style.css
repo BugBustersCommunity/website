@@ -38,7 +38,7 @@ nav{
 }
 .card {
     border-radius: 20px;
-    background: #eeeeee;
+    background: #eeeeee; 
     box-shadow: 20px 20px 60px #48CAE4, -20px -20px 60px #ffffff;
     border: none
 }
@@ -50,52 +50,66 @@ nav{
 }
 
 .neo-button {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     outline: 0 !important;
     cursor: pointer;
-    color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
-    margin-right: 10px;
+    margin-right: 13px;
     border-radius: 50%;
-    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    /* background-color: #e4dddd; */
+    background: linear-gradient(145deg, #d5cccc, #ffffff);
+    /* background-color: white;
+    background: linear-gradient(145deg, #d5cccc, #ffffff); */
     box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
 }
-
 .neo-button:active {
     border-radius: 50%;
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
     box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
 }
-
-.fa-facebook {
-    color: #3b5998
+.neo-button:hover,button {
+    background: linear-gradient(145deg, white, rgb(45, 117, 217));
+    background-color:black;
+    transition: 0.7s;
 }
-
-.fa-linkedin {
-    color: #0077b5
-}
-
-.fa-google {
-    color: #dc4e41
-}
-
-.fa-youtube {
-    color: #cd201f
-}
-
 .fa-twitter {
     color: #55acee
 }
 
+.fa-linkedin-in {
+    color: #0077b5
+}
+
+.fa-instagram {
+    color: #f435b7
+}
+
+.fa-github {
+    color: #171515
+}
+
 .footer {
     display: flex;
+    padding-top: 4vw;
+    padding-bottom: 10vw;
+
     flex-direction: column;
     color:#121414;
     background-color:#48CAE4;
   }
   
+  @media screen and (max-width: 767px){
+ .footer {
+    padding-top: 10vw;
+      padding-right: 2vw;
+      padding-left: 2vw;
+  }
+}
+
+
+
   .footer h3 {
     margin-top:0;
     margin-bottom:12px;
@@ -249,15 +263,14 @@ nav{
 
 
 
-@media screen and (max-width: 991px)
+@media screen and (max-width: 991px){
 .body {
     padding-right: 0;
     padding-left: 0;
-    background-color: #121221;
-    background-image: url(https://uploads-ssl.webflow.com/6286054…/628bdeb…_background-image.svg);
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
+}
 }
 
 .body {
@@ -288,14 +301,18 @@ body {
 .section {
     overflow: hidden;
     height: auto;
+    align-items: center;
     margin-bottom: 0;
     padding-right: 8vw;
     padding-bottom: 0;
     padding-left: 8vw;
     border: 1px solid rgba(112,128,144,.46);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
+   
 }
+
+
+
+
 
 
 .aim1{
@@ -315,7 +332,8 @@ body {
 }
 
 @media screen and (max-width: 991px)
-.aim2 {
+{
+.aim1 , .aim2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -325,6 +343,8 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
 }
 
 .aim2 {
@@ -337,4 +357,66 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
+.aim{
+  display: block;
+  padding: auto;
+  width:100%;
+}
+
+
+@media screen and (max-width: 767px)
+{
+.myteam {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 991px)
+{
+  .myteam {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.myteam {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    padding-top: 65px;
+    padding-bottom: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+
+.about_us, .but_why  {
+  border: 0;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+
+}
+
+.about_us{
+  margin-top: 15px;
+}
+
+
 
