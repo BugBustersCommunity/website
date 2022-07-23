@@ -89,9 +89,9 @@ nav{
     color: #55acee
 }
 
-/*footer - modified*/
-  .footer {
-    padding:50px 0;
+.footer {
+    display: flex;
+    flex-direction: column;
     color:#121414;
     background-color:#48CAE4;
   }
