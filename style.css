@@ -194,6 +194,7 @@ nav{
     font-size:13px;
     margin-bottom:0;
   }
+
   .wrapper {
     margin: 50px auto;
   }
@@ -417,6 +418,17 @@ body {
 .about_us{
   margin-top: 15px;
 }
+
+
+.btn-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
 
 
 
