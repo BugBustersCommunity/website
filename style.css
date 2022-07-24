@@ -265,7 +265,21 @@ nav{
     transform: translateY(4px);
   }
 
+.ion-social-facebook{
+  background: url(./icons/icon-footer-facebook-grey.svg);
+}
 
+.ion-social-twitter{
+  background: url(./icons/icon-footer-twitter-grey.svg);
+}
+
+.ion-social-snapchat{
+  background: url(./icons/snapchat-footer-grey.svg);
+}
+
+.ion-social-instagram{
+  background: url(./icons/icon-footer-instagram-grey.svg);
+}
 
 
   @media screen and (max-width: 991px){
