@@ -279,8 +279,16 @@ nav{
   background-image: url(./icons/icon-footer-facebook-grey.svg);
 }
 
+.social-facebook-footer:hover {
+    background-image: url(./icons/footer-facebook.svg);
+}
+
 .social-twitter-footer{
   background-image: url(./icons/icon-footer-twitter-grey.svg);
+}
+
+.social-twitter-footer:hover {
+    background-image: url(./icons/footer-twitter.svg);
 }
 
 .social-snapchat-footer{
@@ -288,8 +296,16 @@ nav{
   background-image: url(./icons/snapchat-footer-grey.svg);
 }
 
+.social-snapchat-footer:hover {
+    background-image: url(./icons/snapchat-footer.svg);
+}
+
 .social-instagram-footer{
   background-image: url(./icons/icon-footer-instagram-grey.svg);
+}
+
+.social-instagram-footer:hover {
+    background-image: url(./icons/footer-instagram.svg);
 }
 
 
