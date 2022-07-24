@@ -266,7 +266,8 @@ nav{
   }
 
 .icon{
-  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 100;
 }
 .social-facebook-footer{
