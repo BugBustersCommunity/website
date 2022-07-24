@@ -297,6 +297,7 @@ nav{
 }
 
 .social-snapchat-footer:hover {
+    background-size: 42px;
     background-image: url(./icons/snapchat-footer.svg);
 }
 
@@ -305,6 +306,7 @@ nav{
 }
 
 .social-instagram-footer:hover {
+    background-size: 25px;
     background-image: url(./icons/footer-instagram.svg);
 }
 
