@@ -69,13 +69,34 @@ nav{
     background: linear-gradient(145deg, #d6d6d6, #ffffff);
     box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
 }
-.neo-button:hover,button {
+button {
     background: linear-gradient(145deg, white, rgb(45, 117, 217));
     background-color:black;
     transition: 0.7s;
 }
 .fa-twitter {
     color: #55acee
+}
+
+.neo-button:hover, .neo-button:hover .fa-brands {
+    transition: 0.7s;
+    color: white;
+}
+
+.neo-button:nth-child(1):hover {
+    background: #1DA1F2;
+}
+
+.neo-button:nth-child(2):hover {
+    background: #0A66C2;
+}
+
+.neo-button:nth-child(3):hover {
+    background: #f435b7;
+}
+
+.neo-button:nth-child(4):hover {
+    background: #333;
 }
 
 .fa-linkedin-in {
