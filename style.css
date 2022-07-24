@@ -270,19 +270,19 @@ nav{
   z-index: 100;
 }
 .social-facebook-footer{
-  background: url(./icons/icon-footer-facebook-grey.svg);
+  background-image: url(./icons/icon-footer-facebook-grey.svg);
 }
 
 .social-twitte-footer{
-  background: url(./icons/icon-footer-twitter-grey.svg);
+  background-image: url(./icons/icon-footer-twitter-grey.svg);
 }
 
 .social-snapchat-footer{
-  background: url(./icons/snapchat-footer-grey.svg);
+  background-image: url(./icons/snapchat-footer-grey.svg);
 }
 
 .social-instagram-footer{
-  background: url(./icons/icon-footer-instagram-grey.svg);
+  background-image: url(./icons/icon-footer-instagram-grey.svg);
 }
 
 
