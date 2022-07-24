@@ -16,6 +16,10 @@ nav{
     box-shadow: none;
     outline: none;
 }
+.nav-item a:hover{
+  background-color: white;
+  border-radius: 5px;
+}
 .navbar-toggler i:hover {
     transform: none;
 }
