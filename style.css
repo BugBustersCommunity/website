@@ -174,11 +174,14 @@ nav{
     display:inline-block;
     text-align:center;
     border-radius:50%;
+    border: #121414 solid 1.5px;  
+    border-radius: 50%;
+    background-color: white;
     border: #121414 solid 1.5px;
-    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-    margin:0 8px;
-    color:rgb(17, 18, 109);
-    opacity:0.75;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+    margin: 0 8px;
+    /* color: rgb(17, 18, 109); */
+    opacity: 0.75;  
   }
   
   .footer .item.social > a:hover {
@@ -266,9 +269,11 @@ nav{
   }
 
 .icon{
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 100;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-position-x: center;
+    background-position-y: center;
 }
 .social-facebook-footer{
   background-image: url(./icons/icon-footer-facebook-grey.svg);
@@ -279,6 +284,7 @@ nav{
 }
 
 .social-snapchat-footer{
+  background-size: 35px;
   background-image: url(./icons/snapchat-footer-grey.svg);
 }
 
