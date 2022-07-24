@@ -265,19 +265,23 @@ nav{
     transform: translateY(4px);
   }
 
-.ion-social-facebook{
+.icon{
+  height: 32px;
+  z-index: 100;
+}
+.social-facebook-footer{
   background: url(./icons/icon-footer-facebook-grey.svg);
 }
 
-.ion-social-twitter{
+.social-twitte-footer{
   background: url(./icons/icon-footer-twitter-grey.svg);
 }
 
-.ion-social-snapchat{
+.social-snapchat-footer{
   background: url(./icons/snapchat-footer-grey.svg);
 }
 
-.ion-social-instagram{
+.social-instagram-footer{
   background: url(./icons/icon-footer-instagram-grey.svg);
 }
 
