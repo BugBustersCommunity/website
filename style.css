@@ -177,6 +177,11 @@ nav{
       text-align:center;
       margin-top:20px;
     }
+
+    #nav{
+      height: 12.3rem;
+      width: 100vw;
+    }
   }
   
   .footer .item.social > a {
