@@ -43,6 +43,10 @@ text-shadow: 4px 3px 8px rgb(4, 4, 102);
     box-shadow: none;
     outline: none;
 }
+.nav-item a:hover{
+  background-color: white;
+  border-radius: 5px;
+}
 .navbar-toggler i:hover {
     transform: none;
 }
