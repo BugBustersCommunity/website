@@ -9,6 +9,13 @@
 body{
     background-color: #CAF0F8;
 }
+
+.logo{
+    border-radius: 50%;
+    height: 51px;
+    width: 53px;
+}
+
 nav{
     background-color: #058da8 !important;
 }
@@ -50,6 +57,23 @@ text-shadow: 4px 3px 8px rgb(4, 4, 102);
 .navbar-toggler i:hover {
     transform: none;
 }
+
+/* Navabr modified starts */
+#nav{
+  height: 4.3rem;
+}
+
+.nav_link{
+  color: #000;
+  font-size: 1.1rem;
+  transition: .2s ease-in-out;
+}
+
+.nav_link:hover{
+  color: #1f6b87;
+}
+/* Navabr modified ends */
+
 .myteam{
     display: grid;
     place-items: center;
@@ -205,6 +229,11 @@ button {
     .footer .item.social {
       text-align:center;
       margin-top:20px;
+    }
+
+    #nav{
+      height: 4.3rem;
+      width: 100vw;
     }
   }
   
