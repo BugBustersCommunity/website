@@ -133,7 +133,7 @@ code .
     <p align="center"> Aditi Singh </p>
 </div>
 
-**Project Contributors** 
+## Project Contributors** 
 
  <a href="https://github.com/BugBustersCommunity/website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=BugBustersCommunity/website" />
