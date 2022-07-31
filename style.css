@@ -234,6 +234,7 @@ button {
   border-radius: 20px;
   box-shadow: 0 9px #44d2dc;
   align-self: center;
+  cursor: pointer;
 }
 
 .button-for-footer:hover{
