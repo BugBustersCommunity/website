@@ -168,6 +168,91 @@ button {
 
 
 /* Styling footer starts */
+    #nav{
+      height: 4.3rem;
+      width: 100vw;
+    }
+  
+  
+  .footer .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:rgb(17, 18, 109);
+    opacity:0.75;
+  }
+  
+  .footer .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  .wrapper {
+    margin: 50px auto;
+  }
+  .divtype {
+    position: relative;
+    display: flex;
+    height: 30px;
+    border: 0;
+    border-radius: 30px;
+    background: #fff;
+  }
+  .divtype span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: grid;
+    place-items: center;
+    width: 100px;
+    font-size: 0.875rem;
+    border-radius: inherit;
+    background: #3abced;
+    color: #242424;
+    pointer-events: none;
+    transition: all 0.35s;
+    letter-spacing: 1px;
+  }
+ .divtype input {
+    flex: 1 1 auto;
+    padding-left: 6.5rem;
+    height: inherit;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    text-indent: 0.625rem;
+    transition: all 0.35s;
+  }
+  .sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+ }
+  .divtype input::placeholder {
+    color: #9b9ba5;
+  }
+  .divtype input:focus {
+    transform: translateX(-100px);
+  }
+  .divtype input:focus ~ span {
+    transform: translateY(-30px);
+  }
 
 .footer{
   width: 100%;
