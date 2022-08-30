@@ -173,6 +173,29 @@ button {
       width: 100vw;
     }
   
+
+  .footer .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  @media (max-width: 502px){
+  h3{
+    margin: 0px 30%;
+  }  
+  div h2{
+    margin: 10px 36%;
+  }
+  .aim{
+    padding-top: 1px;
+  }
+  }
+
   
   .footer .item.social > a {
     font-size:20px;
