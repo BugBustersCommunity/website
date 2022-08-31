@@ -132,3 +132,11 @@ code .
     </a>
     <p align="center"> Aditi Singh </p>
 </div>
+
+<h2 align="center"> Project Contributors </h2> 
+
+<div align="center">
+    <a href="https://github.com/BugBustersCommunity/website/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=BugBustersCommunity/website" />
+    </a>
+</div>
