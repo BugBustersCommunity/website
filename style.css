@@ -41,11 +41,12 @@ text-shadow: 4px 3px 8px rgb(4, 4, 102);
   text-shadow: #023E8A;
 }
 .nav-item a:hover{
-  color: rgb(230, 227, 227);
+  color: black;
   width: fit-content;
   padding-bottom: 2px;
   border-bottom-style: solid;
 }
+
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
