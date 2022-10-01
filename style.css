@@ -10,6 +10,17 @@ body{
     background-color: #CAF0F8;
 }
 
+.center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,h3{
+  font-size: 2rem;
+  text-align: center;
+}
+
 .logo{
     border-radius: 50%;
     height: 51px;
