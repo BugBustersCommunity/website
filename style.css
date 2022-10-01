@@ -129,6 +129,22 @@ button {
     background-color:black;
     transition: 0.7s;
 }
+
+/* hover effect in the footer */
+
+.icon-fb:hover{
+color: #1877f2;
+}
+.icon-sc:hover{
+color:#fffc00;
+}
+.icon-tw:hover{
+color: #1da1f2;
+}
+.icon-ig:hover{
+color:#c32aa3;
+}
+
 .fa-twitter {
     color: #55acee
 }
