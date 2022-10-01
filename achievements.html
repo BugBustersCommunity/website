@@ -3,49 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Achievements</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
     <style>
-        .container h1{
+        body{
+            padding:0;
+            margin:0;
+        }
+
+        .yt-videos{
+        width: 100; 
+        aspect-ratio: 16 / 9; 
+        }
+
+        @media (min-width: 768px) { 
+            .yt-videos{
+                width:55%;
+                aspect-ratio: 16 / 9; 
+                    }
+            }
+           
+        h1{
+            width:100%;
             text-align: center;
             font-family: inherit;
             background-color: #058da8;
             padding: 15px;
             margin-top: 0;
-          
         }
-        .container{
+
+        body{
            background-color: lightskyblue;
+        }
+
+        li{
+            padding: 2em;
+            padding-top: 1em;;
+        }
+
+        h2{
+            margin-top: 1.5em;
+            margin-bottom:0em;
         }
         
     </style>
 </head>
 <body>
-    <div class="container">
+    <div>
         <h1>Achievements</h1>
+
         <div class="videos">
             
-            <ul>
-                <h2>First Event on Open Source</h2>
-                <li>
-                    <iframe width="700" height="400" src="https://www.youtube.com/embed/mPfjMxkanec" title="First event on Open Source !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <hr>
-                <h2>Google Season of Docs!</h2>
-                <li>
-                    <iframe  width="700" height="400" src="https://www.youtube.com/embed/msq57IedVDE" title="Google Season of Docs!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <hr>
-                <h2>Google Summer of Code session with Soham Parekh</h2>
-                <li>
-                    <iframe  width="700" height="400" src="https://www.youtube.com/embed/nZCNAbPzeDg" title="Google Summer of Code session with Soham Parekh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </li>
-            </ul>
+            <ul style="list-style-type:none;">
 
+                <h2>► First Event on Open Source</h2>
+                <li>
+                    <iframe class="yt-videos" src="https://www.youtube.com/embed/mPfjMxkanec" title="First event on Open Source !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <hr>
+
+                <h2>► Google Season of Docs!</h2>
+                <li>
+                    <iframe  class="yt-videos" src="https://www.youtube.com/embed/msq57IedVDE" title="Google Season of Docs!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <hr>
+
+                <h2>► Google Summer of Code session with Soham Parekh</h2>
+                <li>
+                    <iframe  class="yt-videos" src="https://www.youtube.com/embed/nZCNAbPzeDg" title="Google Summer of Code session with Soham Parekh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                </li>
+
+            </ul>
         </div>
     </div>
 </body>
