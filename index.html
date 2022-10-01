@@ -90,14 +90,14 @@
       <h2 style="margin: 10px 40%">About Us</h2>
       <div class="aim1 container d-flex justify-content-center">
         <div class="row">
-          <div class="aim col-md-6" style="padding-top: 40px">
+          <div class="aim col-md-6" style="padding-top: 40px" id="about--text1">
             We aim that no student is unaware of the opportunities around them,
             let it be open source events, hackathons, internships, etc. We also
             aim that, in this pandemic, every student learns some skills and is
             able to showcase them in their resume. Through this community, we
             want to reach each and every student.
           </div>
-          <div class="aim col-md-6">
+          <div class="aim col-md-6" id="about--video">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player
@@ -117,7 +117,7 @@
         class="aim2 container d-flex justify-content-center"
       >
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6"  id="about--video">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_o18imdcr.json"
@@ -130,19 +130,19 @@
           </div>
           <div class="aim col-md-6">
             <ul>
-              <li>You will have access to tons of free resources.</li>
-              <li>Updates about events, hackathons, internships, etc.</li>
-              <li>
+              <li id="text">You will have access to tons of free resources.</li>
+              <li id="text">Updates about events, hackathons, internships, etc.</li>
+              <li id="text">
                 We will be planning several webinars conducted by industry
                 experts, to guide students on trending skills and latest
                 technologies.
               </li>
-              <li>
+              <li id="text">
                 Community meetings will be held frequently to address the
                 queries of the students.
               </li>
-              <li>You can learn new skills and add them to your resume.</li>
-              <li>
+              <li id="text">You can learn new skills and add them to your resume.</li>
+              <li id="text">
                 You will get knowledge on how to build a strong profile on
                 LinkedIn and Github (it's underestimated!).
               </li>
@@ -151,7 +151,7 @@
         </div>
       </div>
       <div class="aim1 container d-flex justify-content-center">
-        <div class="row">
+        <div class="row" id="text">
           <div class="aim col-md-6" style="padding-top: 100px">
             Do we have to invest money? <br />
             <strong>No!!!!</strong> Just invest some time and that would be
@@ -176,7 +176,7 @@
 
     <div class="myteam container d-flex justify-content-center">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5 mb-5">
             <div class="text-center">
               <img src="./profile-img/1658684076292.jpg" alt="siddhi's profile icon" width="100" class="rounded-circle" />
@@ -203,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5">
             <div class="text-center">
               <img src="./profile-img/girija.jpg" alt="girija's profile icon" width="100" class="rounded-circle" />
@@ -230,7 +230,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5">
             <div class="text-center">
               <img src="./profile-img/aditi.jpg" alt="aditi's profile icon" width="100" class="rounded-circle" />
@@ -256,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5">
             <div class="text-center">
               <img src="./profile-img/sahana.jpg" alt="sahana's profile icon" width="100" class="rounded-circle" />
@@ -282,7 +282,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5">
             <div class="text-center">
               <img src="./profile-img/payal.jpg" alt="payal's profile icon" width="100" class="rounded-circle" />
@@ -308,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="team--list">
           <div class="card p-3 py-4 mt-5">
             <div class="text-center">
               <img src="./profile-img/rohini.jpg" alt="rohini's profile icon" width="100" class="rounded-circle" />
@@ -390,5 +390,47 @@
         </div>
       </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+      const tl = gsap.timeline();
+
+      tl.from('#about--video', {
+        y: 100,
+        opacity: 0,
+        duration: 1
+      })
+      .from('#about--text1', {
+        x: -100,
+        opacity: 0,
+        duration: 1
+      })
+      .from('#about--text', {
+        scrollTrigger: '#about--text',
+        x: -100,
+        opacity: 0,
+        duration: 1
+      })
+
+      gsap.from('#text', {
+        scrollTrigger: '#text',
+        x: -100,
+        opacity: 0,
+        stagger: .2,
+        duration: 1
+      })
+
+
+      gsap.from('#team--list', {
+        scrollTrigger: {
+          trigger: '#team--list',
+          toggleActions: "restart none none none"
+        },
+        y: 200,
+        opacity: 0,
+        stagger: .2,
+        duration: 1
+      })
+    </script>
   </body>
 </html>
