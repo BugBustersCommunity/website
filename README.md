@@ -50,10 +50,10 @@ git remote add upstream https://github.com/BugBustersCommunity/website.git
 git remote -v
 ```
 
-**6.** Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository).
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream main
+git pull upstream master
 ```
 
 **7.** Create a new branch.
