@@ -399,6 +399,9 @@ button {
   .ic {
     margin: 8px 2px;
   }
+  .about-us-div{
+     margin-left: 150px;
+  }
 }
 
 /* Media query footer ends*/
