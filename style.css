@@ -47,7 +47,7 @@ nav {
 }
 .nav-item a {
   font-size: 20px;
-  color: black;
+  color: white;
   margin-right: 9px;
   font-family: "Roboto Serif", serif;
   font-weight: 900;
@@ -65,6 +65,7 @@ nav {
 }
 .nav-item a:hover {
   background-color: white;
+  color: black;
   border-radius: 5px;
 }
 .navbar-toggler i:hover {
