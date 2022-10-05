@@ -6,112 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <style>
-        .contact h1{
-            text-align: center;
-            font-weight: bold;
-        }
-        .row::after{
-    content: "";
-    display: table;
-    clear: both;
+    main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
 }
-input[type=text],select,textarea{
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 2px solid black;
-    resize: vertical;
-    padding: 10px;
-    font-size: 20px;
-    background-color: white;
+
+.title
+{
+  font-size: 50px;
+  font-weight: bold;
+  padding: 1.5% 0;
 }
-input[type=email],select,textarea{
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 2px solid black;
-    resize: vertical;
-    padding: 10px;
-    background-color: white;
-    font-size: 20px;
+
+.title-info
+{
+padding-bottom: 2%;
 }
-input[type=submit]{
-    padding: 3px;
-    background-color: #a2c3dd;
-    border: 6px solid black;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
+
+.form
+{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2%;
 }
-input[type=submit]:hover{
-    background-color: #b237d1 ;
+
+.input-group, .textarea-group
+{
+  padding: 1% 0;
 }
-.col-25{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    width: 25%;
-    float: left;
-    margin-top: 6px;
-    margin-left: 2px;
+
+input, textarea
+{
+  color: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  padding: 1.5%;
+  font-size: 20px;
 }
-.col-75{
-    float: left;
-    margin-top: 6px;
-    width: 75%;
-    padding: 2px;}
-    *{
-        background-color: #D8E8EE;
-    }
+
+input:focus, textarea:focus
+{
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid #ffffff;
+}
+
+input::placeholder, textarea::placeholder
+{
+  color: transparent;
+}
+
+label
+{
+  color: #757575;
+  position: relative;
+  left: 0.5em;
+  top: -2em;
+cursor: auto;
+  transition: 0.3s ease all;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+  top: -4em;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+  top: -10.5em;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.button-div
+{
+  display: flex;
+  justify-content: center;
+}
+
+button
+{
+  padding: 2%;
+  width: 25%;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: black;
+  color: inherit;
+  box-shadow: 0 0 10px #212121;
+}
+
+button:hover
+{
+  background-color: #424242;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1200px)
+{
+  .form
+  {
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 680px)
+{
+  .form
+  {
+  width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+.title
+{
+  font-size: 40px;
+  padding-top: 6%;
+}
+
+.title-info
+{
+  font-size: 13px;
+}
+
+.form
+{
+  padding: 6% 4%;
+  padding-top: 15%;
+}
+
+.input-group, .textarea-group
+  {
+  padding: 3% 0;
+}
+
+input, textarea
+{
+  font-size: 15px;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+  top: -3.5em;
+  left: 0.1em;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+  top: -8.5em;
+  left: 0.2em;
+  }
+
+  button
+  {
+      font-size: 15px;
+  }
+}
     </style>
     </head>
 <body>
-    <div class="contact">
-        <h1>Contact Us</h1>
-    </div>
-    <div class="container">
-        <div class="chat-box">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="fname" placeholder="Your First Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lname" placeholder="Your Last Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col-75">
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                  <label for="feedback">Message/Suggestion</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
+  <main>
+            <div class="title">Contact us</div>
+            <div class="title-info">We'll get back to you soon!</div>
 
-        </div>
-       
-        
-    </div>
-     
+            <form action="" method="" class="form">
+                <div class="input-group">
+                    <input type="text" name="first_name" id="first-name" placeholder="First name">
+                    <label for="first-name">First name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                    <label for="last-name">Last name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+                    <label for="e-mail">e-mail</label>
+                </div>
+
+                <div class="textarea-group">
+                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="button-div">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </main>
+
 </body>
 </html>

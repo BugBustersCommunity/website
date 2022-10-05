@@ -52,6 +52,11 @@ nav {
   font-family: "Roboto Serif", serif;
   font-weight: 900;
   text-shadow: #023e8a;
+
+}
+
+.heading{
+  margin: 30px 40% 
 }
 .nav-item a:hover {
   color: rgb(230, 227, 227);
