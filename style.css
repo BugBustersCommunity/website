@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Merriweather&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.headings {
+  font-family: "Lora", serif;
+  font-size: 45px;
+  padding-top: 20px;
 }
 
 h2,
