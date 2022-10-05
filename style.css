@@ -11,11 +11,38 @@ body {
   background-color: #caf0f8;
   overflow-x: hidden;
 }
+.images{
+  width: 300px; 
+  height: 300px; 
+  vertical-align: middle;
+}
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-width: 768px) {
+  .images{
+    width: 400px; 
+    height: 400px; 
+    vertical-align: middle;
+  } 
+}
+
+  .no-point{
+    list-style: none;
+ } 
+
+
+  .center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 10px;
+  } 
+
+  div h2{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .headings {
@@ -28,6 +55,9 @@ h2,
 h3 {
   font-size: 2rem;
   text-align: center;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right:auto ;
 }
 
 .logo {
@@ -222,10 +252,8 @@ button {
 @media (max-width: 502px) {
   h3 {
     margin: 0px 30%;
-  }
-  div h2 {
-    margin: 10px 36%;
-  }
+  }  
+  
   .aim {
     padding-top: 1px;
   }
