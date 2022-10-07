@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
 }
 body {
   background-color: #caf0f8;
@@ -43,12 +44,16 @@ body {
     font-size: 2.5rem;
     margin-top: 20px;
     margin-bottom: 0px;
+    width: auto;
 }
 
 .headings {
   font-family: "Lora", serif;
+  margin-top: 50px;
   font-size: 45px;
   padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2,
@@ -68,6 +73,7 @@ h3 {
 
 nav {
   background-color: #058da8 !important;
+  overflow: hidden;
 }
 .navbar-brand img {
   border-radius: 50%;
