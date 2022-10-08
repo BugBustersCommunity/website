@@ -11,38 +11,37 @@ body {
   background-color: #caf0f8;
   overflow-x: hidden;
 }
-.images{
-  width: 300px; 
-  height: 300px; 
+.images {
+  width: 300px;
+  height: 300px;
   vertical-align: middle;
 }
 
 @media (min-width: 768px) {
-  .images{
-    width: 400px; 
-    height: 400px; 
+  .images {
+    width: 400px;
+    height: 400px;
     vertical-align: middle;
-  } 
+  }
 }
 
-  .no-point{
-    list-style: none;
- } 
+.no-point {
+  list-style: none;
+}
 
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 10px;
+}
 
-  .center{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    margin-top: 10px;
-  } 
-
-  div h2{
-    font-size: 2.5rem;
-    margin-top: 20px;
-    margin-bottom: 0px;
+div h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .headings {
@@ -57,7 +56,7 @@ h3 {
   text-align: center;
   max-width: 75%;
   margin-left: auto;
-  margin-right:auto ;
+  margin-right: auto;
 }
 
 .logo {
@@ -240,6 +239,7 @@ button {
 }
 
 .footer .item.social {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -252,8 +252,8 @@ button {
 @media (max-width: 502px) {
   h3 {
     margin: 0px 30%;
-  }  
-  
+  }
+
   .aim {
     padding-top: 1px;
   }
@@ -266,6 +266,7 @@ button {
   line-height: 36px;
   display: inline-block;
   text-align: center;
+  justify-content: center;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
   margin: 0 8px;
@@ -275,6 +276,8 @@ button {
 
 .footer .item.social > a:hover {
   opacity: 0.9;
+  transform: scale(1.5);
+  box-shadow: 20px 20px 60px #9e32f0, -20px -20px 60px #ffffff;
 }
 .wrapper {
   margin: 50px auto;
@@ -290,7 +293,7 @@ button {
 }
 .divtype input {
   flex: 1 1 auto;
-  padding-left: 6.5rem;
+  padding-left: 0.1rem;
   height: inherit;
   border: 0;
   outline: none;
@@ -338,29 +341,42 @@ button {
   color: inherit;
   text-decoration: none;
 }
-
-.footer ul a:hover {
+.footer li {
+  transition: all 0.2s ease-in-out;
+}
+.footer li a:hover {
   color: #9e32f0;
-  font-size: 20px;
+  transform: scale(1.5);
 }
 .about-us-div {
-  width: 50%;
-  text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-left: 380px;
 }
 .about-us {
   font-size: 3rem;
   color: #023e8a;
 }
+.para-wrapper {
+  width: 50%;
+}
 .about-para {
+  margin: 0 auto;
+  text-align: center;
   color: #5c6b73;
+
   font-size: 1rem;
 }
 .link {
-  margin-left: 10px;
   font-size: 3rem;
   color: #023e8a;
+}
+.ul > li {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 .footer .item > a {
   font-size: 20px;
@@ -374,12 +390,6 @@ button {
   color: rgb(17, 18, 109);
   opacity: 0.75;
   margin: 0 4px;
-}
-.footer .item.social > a:hover {
-  opacity: 0.9;
-  width: 40px;
-  height: 40px;
-  box-shadow: 20px 20px 60px #9e32f0, -20px -20px 60px #ffffff;
 }
 
 .input {
@@ -395,7 +405,7 @@ button {
   background-color: #928ade;
   border: none;
   border-radius: 10px;
-  align-self: center;
+
   cursor: pointer;
 }
 
@@ -437,3 +447,24 @@ button {
 }
 
 /* Media query footer ends*/
+
+/*Utility Classes*/
+
+.li-hoz {
+  display: flex;
+  flex-direction: row;
+}
+
+/*to be used with flex or grid*/
+.gap-mdm {
+  gap: 1rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
