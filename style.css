@@ -16,23 +16,6 @@ body {
   background-color: var(--blue);
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode .aim {
-  color: white;
-}
-
-.dark-mode .row .text-center {
-  color: rgb(13, 12, 12);
-}
-
-.dark-mode .aim li {
-  color: white;
-}
-
 .icons {
   color: white;
   font-size: 2rem;
