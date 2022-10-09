@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
+
     <style>
       body {
         background-color: #fff;
@@ -39,6 +40,7 @@
         border-radius: 20px;
         border: 5px solid black;
       }
+
       .box:hover {
         box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
         cursor: pointer;
@@ -58,25 +60,30 @@
         height: 10vh;
         align-items: center;
         color: antiquewhite;
-        justify-content: space-evenly;
       }
-      p {
+      .achievements {
         font-size: 5vh;
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        margin-right: 20vw;
       }
-      .home-link {
-        list-style: none;
-        text-decoration: none;
-        color: darkcyan;
-        font-size: 3vh;
-        margin: 0 0 3vh 8vh;
-        align-items: center;
+      .navbar-brand {
+        flex: 1;
+        height: 10vh;
       }
-      .home {
-        list-style: none;
-        background-color: antiquewhite;
-        width: 10vw;
-        border-radius: 20px;
+      .navbar-brand img {
+        border-radius: 50%;
+        margin-left: 3vw;
+        height: 9vh;
+        width: 4vw;
       }
+      .logo {
+        border-radius: 50%;
+        height: 51px;
+        width: 53px;
+      }
+
       h2 {
         font-family: monospace;
         display: flex;
@@ -108,30 +115,33 @@
         h2 {
           height: 4vh;
         }
-
-        .home-link {
-          list-style: none;
-          text-decoration: none;
-          color: darkcyan;
-          font-size: 3vh;
-          margin: 0 0 1vh 2vh;
-          align-items: center;
+        .achievements {
+          font-size: 5vh;
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          margin-right: 10vw;
         }
-        .home {
-          list-style: none;
-          background-color: antiquewhite;
-          width: 19vw;
-          border-radius: 20px;
+        .navbar-brand {
+          flex: 2;
+          height: 9vh;
+        }
+        .navbar-brand img {
+          border-radius: 50%;
+          margin-left: 3vw;
+          margin-top: 1vh;
+          height: 7vh;
+          width: 9vw;
         }
       }
     </style>
   </head>
   <body>
     <h1>
-      <p>Achievements</p>
-      <li class="home">
-        <a class="home-link" href="/">Home</a>
-      </li>
+      <a class="navbar-brand" href="/">
+        <img src="./logo.jpeg" alt="BugBusters websites's logo" class="logo" />
+      </a>
+      <p class="achievements">Achievements</p>
     </h1>
 
     <div class="container">
