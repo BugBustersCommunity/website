@@ -22,7 +22,6 @@
         justify-content: center;
         width: 100vw;
         height: 90vh;
-
         background-color: #90cefb;
       }
 
@@ -39,17 +38,16 @@
         flex-direction: column;
         border-radius: 20px;
         border: 5px solid black;
-          }
+      }
       .box:hover {
         box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
         cursor: pointer;
       }
-      .yt-videos{
+      .yt-videos {
         width: 100%;
-       height: 42vh;
-       border-radius: 20px;
-       margin: 0;
-       
+        height: 42vh;
+        border-radius: 20px;
+        margin: 0;
       }
       h1 {
         font-family: monospace;
@@ -60,6 +58,24 @@
         height: 10vh;
         align-items: center;
         color: antiquewhite;
+        justify-content: space-evenly;
+      }
+      p {
+        font-size: 5vh;
+      }
+      .home-link {
+        list-style: none;
+        text-decoration: none;
+        color: darkcyan;
+        font-size: 3vh;
+        margin: 0 0 3vh 8vh;
+        align-items: center;
+      }
+      .home {
+        list-style: none;
+        background-color: antiquewhite;
+        width: 10vw;
+        border-radius: 20px;
       }
       h2 {
         font-family: monospace;
@@ -69,12 +85,10 @@
         width: 100%;
         margin: 12px;
       }
-      
 
       @media (max-width: 991px) {
         .container {
-            width: 100%;
-            
+          width: 100%;
           display: flex;
           flex-direction: column;
         }
@@ -82,69 +96,80 @@
           width: 80%;
           height: 40vh;
           padding: 0px;
-          margin: 4vh ;
+          margin: 4vh;
           border-radius: 20px;
         }
-        
+
         .yt-videos {
           width: 99%;
           height: 18vh;
           border-radius: 20px;
-          
-
         }
         h2 {
-        height: 4vh;
-        
-      }
+          height: 4vh;
+        }
+
+        .home-link {
+          list-style: none;
+          text-decoration: none;
+          color: darkcyan;
+          font-size: 3vh;
+          margin: 0 0 1vh 2vh;
+          align-items: center;
+        }
+        .home {
+          list-style: none;
+          background-color: antiquewhite;
+          width: 19vw;
+          border-radius: 20px;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Achievements</h1>
+    <h1>
+      <p>Achievements</p>
+      <li class="home">
+        <a class="home-link" href="/">Home</a>
+      </li>
+    </h1>
+
     <div class="container">
       <div class="box">
-        
-          <iframe
-            class="yt-videos"
-            src="https://www.youtube.com/embed/mPfjMxkanec"
-            title="First event on Open Source !"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-       
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/mPfjMxkanec"
+          title="First event on Open Source !"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
         <h2>►First Event on Open Source</h2>
       </div>
       <div class="box">
-       
-          <iframe
-            class="yt-videos"
-            src="https://www.youtube.com/embed/msq57IedVDE"
-            title="Google Season of Docs!"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-       
-        
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/msq57IedVDE"
+          title="Google Season of Docs!"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
         <h2>►Google Season of Docs!</h2>
       </div>
       <div class="box">
-        
-          <iframe
-            class="yt-videos"
-            src="https://www.youtube.com/embed/nZCNAbPzeDg"
-            title="Google Summer of Code session with Soham Parekh"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-       
-        <h2>
-            ►Google Summer of Code session 
-          with Soham Parekh
-        </h2>
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/nZCNAbPzeDg"
+          title="Google Summer of Code session with Soham Parekh"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <h2>►Google Summer of Code session with Soham Parekh</h2>
       </div>
     </div>
   </body>
