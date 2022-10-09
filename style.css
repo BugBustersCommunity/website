@@ -90,8 +90,9 @@ nav {
   font-weight: 900;
   text-shadow: #023e8a;
 }
+
 .nav-item a:hover {
-  color: rgb(230, 227, 227);
+  color: #058da8;
   width: fit-content;
   padding-bottom: 2px;
   border-bottom-style: solid;
