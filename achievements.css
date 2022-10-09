@@ -1,0 +1,59 @@
+nav{
+    background-color: #058da8;
+    padding: 3px;
+    font-style: italic;
+}
+nav>ul{
+    margin-left: 900px;
+    padding: 0px 0px;
+}
+nav>ul>a>li{
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Roboto Serif", serif;
+    color: black;
+    padding: 8px 8px;
+}
+
+.achievement-heading{
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    font-size: 1.8rem;
+}
+
+.achievement-page{
+    font-family: "Lora", serif;
+    background-color: white;
+    line-height: 1cm;
+}
+
+a>li:hover{
+    background-color: white;
+    border-radius: 10px;
+    transition: 10ms;
+}
+
+li>iframe{
+    border-radius: 10px;
+}
+
+nav>ul>a>li{
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    padding: 7px;
+    margin-right: 0px;
+
+}
+
+nav>ul>a>li:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contact-nav>ul>a>li{
+    padding: 7px;
+    margin: 4px;
+}
