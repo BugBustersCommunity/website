@@ -1,84 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Achievements</title>
+    =======
+    <link href="./achievements.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
+
     <style>
-        body{
-            padding:0;
-            margin:0;
+      body {
+        background-color: #fff;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 90vh;
+        background-color: #90cefb;
+      }
+
+      .box {
+        width: 63vh;
+        height: 50vh;
+        border: 1px solid #ccc;
+        margin: 5vh;
+        background: white;
+        padding: 0;
+        transition: 0.9;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+
+      .box:hover {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+        cursor: pointer;
+      }
+      .yt-videos {
+        width: 100%;
+        height: 42vh;
+        border-radius: 20px;
+        margin: 0;
+      }
+      
+      .achievements {
+        font-size: 5vh;
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        margin-right: 20vw;
+      }
+      
+      
+
+      h2 {
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+        height: 6vh;
+        width: 100%;
+        margin: 12px;
+      }
+
+      @media (max-width: 991px) {
+        .container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .box {
+          width: 80%;
+          height: 40vh;
+          padding: 0px;
+          margin: 4vh;
+          border-radius: 20px;
         }
 
-        .yt-videos{
-        width: 100; 
-        aspect-ratio: 16 / 9; 
+        .yt-videos {
+          width: 99%;
+          height: 18vh;
+          border-radius: 20px;
         }
-
-        @media (min-width: 768px) { 
-            .yt-videos{
-                width:55%;
-                aspect-ratio: 16 / 9; 
-                    }
-            }
-           
-        h1{
-            width:100%;
-            text-align: center;
-            font-family: inherit;
-            background-color: #058da8;
-            padding: 15px;
-            margin-top: 0;
+        h2 {
+          height: 4vh;
         }
-
-        body{
-           background-color: lightskyblue;
+        .achievements {
+          font-size: 5vh;
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          margin-right: 10vw;
         }
-
-        li{
-            padding: 2em;
-            padding-top: 1em;;
+        .navbar-brand {
+          flex: 2;
+          height: 9vh;
         }
-
-        h2{
-            margin-top: 1.5em;
-            margin-bottom:0em;
+        .navbar-brand img {
+          border-radius: 50%;
+          margin-left: 3vw;
+          margin-top: 1vh;
+          height: 7vh;
+          width: 9vw;
         }
-        
+      }
     </style>
+  
 </head>
-<body>
-    <div>
-        <h1>Achievements</h1>
+<body class="achievement-page">
+  <div>
+      <nav>
+          <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="index.html"><li>Know our Team</li></a>
+              <a href="achievements.html"><li>Achievements</li></a>
+              <a href="#"><li>Link</li></a>
+              <a href="./Contact Page/contact.html"><li>Contact Us</li></a>
+          </ul>
+      </nav>
+      
+      <h1 class="achievement-heading">Achievements</h1>
 
-        <div class="videos">
-            
-            <ul style="list-style-type:none;">
+      <div class="videos">
+          
+          <ul style="list-style-type:none;">
 
-                <h2>► First Event on Open Source</h2>
-                <li>
-                    <iframe class="yt-videos" src="https://www.youtube.com/embed/mPfjMxkanec" title="First event on Open Source !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <hr>
+    <div class="container">
+      <div class="box">
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/mPfjMxkanec"
+          title="First event on Open Source !"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
 
-                <h2>► Google Season of Docs!</h2>
-                <li>
-                    <iframe  class="yt-videos" src="https://www.youtube.com/embed/msq57IedVDE" title="Google Season of Docs!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <hr>
+        <h2>►First Event on Open Source</h2>
+      </div>
+      <div class="box">
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/msq57IedVDE"
+          title="Google Season of Docs!"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
 
-                <h2>► Google Summer of Code session with Soham Parekh</h2>
-                <li>
-                    <iframe  class="yt-videos" src="https://www.youtube.com/embed/nZCNAbPzeDg" title="Google Summer of Code session with Soham Parekh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </li>
+        <h2>►Google Season of Docs!</h2>
+      </div>
+      <div class="box">
+        <iframe
+          class="yt-videos"
+          src="https://www.youtube.com/embed/nZCNAbPzeDg"
+          title="Google Summer of Code session with Soham Parekh"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
 
-            </ul>
-        </div>
+        <h2>►Google Summer of Code session with Soham Parekh</h2>
+      </div>
     </div>
-</body>
+  </body>
 </html>

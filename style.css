@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap");
 
+
 :root {
   --blue: #caf0f8;
   --darkblue: #0b6383;
@@ -162,6 +163,9 @@ nav {
   font-size: 25px;
   font-family: "Zilla Slab", serif;
 }
+
+/* Navabr modified ends */
+
 .aim {
   color: #023e8a;
   font-size: 25px;
@@ -217,7 +221,6 @@ button {
 }
 .icon-tw:hover {
   color: #1da1f2;
-  transform: scale(1.1);
 }
 .icon-ig:hover {
   color: #c32aa3;
@@ -235,17 +238,14 @@ button {
 
 .neo-button:nth-child(1):hover {
   background: #1da1f2;
-  transform: scale(1.1);
 }
 
 .neo-button:nth-child(2):hover {
   background: #0a66c2;
-  transform: scale(1.1);
 }
 
 .neo-button:nth-child(3):hover {
   background: #f435b7;
-  transform: scale(1.1);
 }
 
 .neo-button:nth-child(4):hover {
@@ -272,6 +272,7 @@ button {
 }
 
 .footer .item.social {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -280,16 +281,10 @@ button {
     text-align: center;
     margin-top: 20px;
   }
-  .icons {
-    display: none;
-  }
 }
 @media (max-width: 502px) {
   h3 {
     margin: 0px 30%;
-  }
-  div h2 {
-    margin: 10px 36%;
   }
   .aim {
     padding-top: 1px;
@@ -303,12 +298,14 @@ button {
   line-height: 36px;
   display: inline-block;
   text-align: center;
+  justify-content: center;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
   margin: 0 8px;
   color: rgb(17, 18, 109);
   opacity: 0.75;
 }
+
 
 .footer .item.social > a:hover {
   opacity: 0.9;
@@ -380,22 +377,68 @@ button {
   width: 100%;
   padding-top: 50px;
   color: #121414;
+
+.footer .item.social > a:hover {
+  opacity: 0.9;
+  transform: scale(1.5);
+  box-shadow: 20px 20px 60px #9e32f0, -20px -20px 60px #ffffff;
+}
+.wrapper {
+  margin: 50px auto;
+}
+.divtype {
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 325px;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+}
+.divtype input {
+  flex: 1 1 auto;
+  padding-left: 0.1rem;
+  height: inherit;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+.divtype input::placeholder {
+  color: #9b9ba5;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 30px;
   background-color: #48cae4;
 }
 
 .footer h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
 }
 
 .footer ul {
   padding: 0;
   list-style: none;
   line-height: 1.6;
-  font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  color: #5c6b73;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer ul a {
@@ -407,6 +450,16 @@ button {
 .footer ul a:hover {
   opacity: 0.8;
 }
+.footer li {
+  transition: all 0.2s ease-in-out;
+}
+.footer li a:hover {
+  color: #9e32f0;
+  transform: scale(1.5);
+}
+.about-us-div {
+  display: flex;
+
 
 .footer .item > a {
   font-size: 20px;
@@ -420,32 +473,66 @@ button {
   color: rgb(17, 18, 109);
   opacity: 0.75;
   margin: 0 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.footer .item.social > a:hover {
-  opacity: 0.9;
+.about-us {
+  font-size: 3rem;
+  color: #023e8a;
+}
+.para-wrapper {
+  width: 50%;
+}
+.about-para {
+  margin: 0 auto;
+  text-align: center;
+  color: #5c6b73;
+  font-size: 1rem;
+}
+.link {
+  font-size: 3rem;
+  color: #023e8a;
+}
+.ul > li {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.footer .item > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  color: rgb(17, 18, 109);
+  opacity: 0.75;
+  margin: 0 4px;
 }
 
 .input {
-  padding: 6px 18px;
+  padding: 6px 10px;
   border-radius: 20px;
   border: none;
   margin-right: 10px;
 }
 
 .button-for-footer {
-  padding: 6px 18px;
+  padding: 10px 20px;
   outline: none;
   background-color: #928ade;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 9px #44d2dc;
-  align-self: center;
+  border-radius: 10px;
+
   cursor: pointer;
 }
 
 .button-for-footer:hover {
-  background-color: #b6a2ec;
+  box-shadow: 20px 20px 60px #5fd7df, -20px -20px 60px #ffffff;
+
 }
 
 .button-for-footer:active {
@@ -456,11 +543,17 @@ button {
 
 .copyright {
   position: relative;
-  bottom: -14px;
+  padding-top: 28px;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
   text-align: center;
-  letter-spacing: 1px;
 }
-
+.copyright-text {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
 .footer {
   border: 1px solid #48cae4;
 }
@@ -476,3 +569,24 @@ button {
 }
 
 /* Media query footer ends*/
+
+/*Utility Classes*/
+
+.li-hoz {
+  display: flex;
+  flex-direction: row;
+}
+
+/*to be used with flex or grid*/
+.gap-mdm {
+  gap: 1rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}

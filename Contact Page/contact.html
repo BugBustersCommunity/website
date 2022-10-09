@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="../achievements.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="achievement-page">
+    <div class="background"></div>
+    <nav class="contact-nav">
+      <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="../index.html"><li>Know our Team</li></a>
+          <a href="achievements.html"><li>Achievements</li></a>
+          <a href="#"><li>Link</li></a>
+          <a href="./Contact Page/contact.html"><li>Contact Us</li></a>
+      </ul>
+  </nav>
+    <section class="contact">
+      <div class="content toggle" id="thanks">
+        <p>Thanks for Contacting Us!</p>
+        <p>
+          Click <a href="/index.html">here</a> to go back to the home page. 🤗
+        </p>
+        <p id="counter"></p>
+      </div>
+      <div class="content" id="header">
+        <h1>Contact Us</h1>
+        <p>
+          A community for the students, by the students, and of the students!
+          We’re here to provide you with all the resources you’ll require in
+          your journey, and mentor you to become the best of the best.
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactForm" id="container">
+          <!-- Add below in action the valid email ID to which the mail should be sent over to. -->
+          <form
+            action="mailto:youremail@gmail.com"
+            method="POST"
+            onsubmit="formHandler(event);"
+            id="form"
+          >
+            <div class="inputBox">
+              <input
+                type="text"
+                name="First Name"
+                required="required"
+                autocomplete="off"
+              />
+              <span>First Name</span>
+            </div>
+            <div class="inputBox">
+              <input
+                type="text"
+                name="Last Name"
+                required="required"
+                autocomplete="off"
+              />
+              <span>Last Name</span>
+            </div>
+            <div class="inputBox">
+              <input
+                type="email"
+                name="Email"
+                required="required"
+                autocomplete="off"
+              />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea
+                name="Message/Suggestion"
+                cols="15"
+                rows="2"
+                minlength="10"
+                maxlength="100"
+                required="required"
+              ></textarea>
+              <span>Message/Suggestion</span>
+            </div>
+            <div class="inputBox submitbtn">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="contact.js"></script>
+  </body>
+</html>

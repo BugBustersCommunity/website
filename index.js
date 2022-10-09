@@ -1,8 +1,14 @@
 const hamNav = document.getElementById("hamburger_navbar");
 const nav = document.getElementById("nav");
-
-console.log(nav);
+const navItemsWrapper = document.getElementById("navbarSupportedContent");
 
 hamNav.addEventListener("click", (e) => {
-  nav.style.height = "12.3rem";
+  if (navItemsWrapper.style.display === "block") {
+    navItemsWrapper.style.display = "none";
+    nav.style.height = "4.3rem";
+  } else {
+    navItemsWrapper.style.display = "block";
+    nav.style.height = "max-content";
+  }
+
 });
