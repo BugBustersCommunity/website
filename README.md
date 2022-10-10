@@ -92,7 +92,7 @@ git push -u origin <your_branch_name>
 
 <hr>
 
-## How to **run project the project**?
+## How to **run the project**?
 
 Please make sure you have vs code editor installed. If you don't have it, [download it](https://code.visualstudio.com/download).
 After that, install **live server extension** from the extension tab.
