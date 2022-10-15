@@ -51,6 +51,12 @@ div h2 {
   padding-top: 20px;
   margin: 0 auto;
 }
+.aboutUs {
+  font-family: "Lora", serif;
+  font-size: 45px;
+  padding-top: 20px;
+  margin: 50px auto 0 auto;
+}
 
 h2,
 h3 {

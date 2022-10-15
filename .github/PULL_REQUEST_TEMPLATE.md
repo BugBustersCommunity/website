@@ -16,7 +16,7 @@ Before you create this PR, confirm all the requirements listed below by checking
 -   [ ] I have tested the code before submission.
 -   [ ] I have formatted the code . (You can use any html, css beautifier)
 -   [ ] My changes generates no new warnings.
--   [ ] I'm HSOC22 contributor.
+-   [ ] I'm Hacktoberfest 2022 contributor.
 -   [ ] I have commented my code, particularly in hard-to-understand areas.
 
 
