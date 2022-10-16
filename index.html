@@ -28,7 +28,99 @@
       href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Lobster&family=Lora:ital@0;1&family=Noto+Serif:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto+Slab&family=Source+Sans+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Bug Busters</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    html,body{
+      display: grid;
+      height: 100%;
+      width: 100%;
+      place-items: center;
+      background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    }
+    .wrapper{
+      display: flex;
+      justify-content: center;
+    
+    }
+    .wrapper .button{
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+    
+      margin: 0 5px;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-out;
+    }
+    .wrapper .button:hover{
+      width: 200px;
+    }
+    a{
+      color: black;
+    }
+    .wrapper .button .icon{
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      border-radius: 50px;
+      box-sizing: border-box;
+      line-height: 60px;
+      transition: all 0.3s ease-out;
+    }
+   
+    .wrapper .button:nth-child(1):hover .icon{
+      background: #E1306C;
+    }
+    .wrapper .button:nth-child(2):hover .icon{
+      background: #2267C3;
+    }
+    .wrapper .button:nth-child(3):hover .icon{
+      background: #ff0000;
+    }
+    .wrapper .button:nth-child(4):hover .icon{
+      background: #5865F2;
+    }
+    .wrapper .button .icon i{
+      font-size: 25px;
+      line-height: 60px;
+      transition: all 0.3s ease-out;
+    }
+    .wrapper .button:hover .icon i{
+      color: #fff;
+    }
+    .wrapper .button span{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 60px;
+      margin-left: 10px;
+      transition: all 0.3s ease-out;
+    }
+   
+    .wrapper .button:nth-child(1) span{
+      color: #E1306C;
+    }
+    .wrapper .button:nth-child(2) span{
+      color: #333;
+    }
+    .wrapper .button:nth-child(3) span{
+      color: #ff0000;
+    }
+    .wrapper .button:nth-child(4) span{
+      color: #5865F2;
+    }
+     </style>
   </head>
   <body>
     <script
@@ -370,16 +462,36 @@
               <a href="#" class="ic"> <i class="icon ion-social-instagram"> </i></a>
             </div> -->
           </div>
-
-          <div>
-            
-            <div class="col item social">
-              <a href="#" aria-label="BugBuster's facebook handle"> <i class="icon ion-social-facebook icon-fb"></i></a
-              ><a href="#" aria-label="BugBuster's twitter handle"> <i class="icon ion-social-twitter icon-tw"></i></a
-              ><a href="#" aria-label="BugBuster's snapchat handle"> <i class="icon ion-social-snapchat icon-sc"></i></a
-              ><a href="#" aria-label="BugBuster's instagram handle"> <i class="icon ion-social-instagram icon-ig"></i></a>
+          <div class="wrapper">
+          
+            <div class="button">
+               <div class="icon">
+              <a  target="_blank" href="https://www.instagram.com/bug_busters_community/"> <i class="fab fa-instagram"></i>
+              </a> 
+              </div>
+               <span>Instagram</span>
             </div>
-          </div>
+            <div class="button">
+               <div class="icon">
+                 <a target="_blank" href="https://www.linkedin.com/company/bug-busters1/" > <i class="fab fa-linkedin-in"></i>
+                 </a>       </div>
+               <span>LinkedIn</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCqH6JeCTHngoGjV-5VlKNHg"><i class="fab fa-youtube"></i>
+                  </a>
+                  </div>
+               <span>YouTube</span>
+            </div>
+            <div class="button">
+              <div class="icon">
+                 <a target="_blank" href="https://discord.gg/5AzjNtV8vG"><i class="fab fa-discord"></i>
+                 </a>
+                </div>
+              <span>Discord</span>
+           </div>
+         </div>
 
           <div class="wrapper divtype">
             <label for="email-input" class="sr-only">Email Input</label>
