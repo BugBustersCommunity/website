@@ -16,7 +16,7 @@ body {
 .contact {
   position: relative;
   min-height: 100vh;
-  padding: 50px 100px;
+  padding: 7em 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,9 +145,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  .contact {
-    padding: 50px;
-  }
   .container {
     flex-direction: column;
   }
