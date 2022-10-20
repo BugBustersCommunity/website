@@ -1,59 +1,94 @@
-nav{
-    background-color: #058da8;
-    padding: 3px;
-    font-style: italic;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
-nav>ul{
-    margin-left: 900px;
-    padding: 0px 0px;
+ul {
+  margin: 0;
 }
-nav>ul>a>li{
-    display: inline-block;
-    list-style: none;
-    font-size: 15px;
-    text-decoration: none;
-    font-family: "Roboto Serif", serif;
-    color: black;
-    padding: 8px 8px;
+li {
+  list-style: none;
 }
-
-.achievement-heading{
-    color: black;
-    background-color: white;
-    padding-top: 30px;
-    font-size: 1.8rem;
+a {
+  text-decoration: none;
 }
-
-.achievement-page{
-    font-family: "Lora", serif;
-    background-color: white;
-    line-height: 1cm;
+button {
+  background: linear-gradient(145deg, white, rgb(45, 117, 217));
+  transition: 0.7s;
 }
-
-a>li:hover{
-    background-color: white;
-    border-radius: 10px;
-    transition: 10ms;
+#nav {
+  background-color: #058da8;
+  font-style: italic;
 }
-
-li>iframe{
-    border-radius: 10px;
+.achievement-page {
+  font-family: "Lora", serif;
+  background-color: white;
+  line-height: 1cm;
 }
-
-nav>ul>a>li{
-    font-family: "Lora", serif;
-    font-size: 1.3rem;
-    padding: 7px;
-    margin-right: 0px;
-
+.navbar-heading p {
+  font-size: 30px;
+  margin: auto 5px;
+  font-family: "Roboto Serif", serif;
+  font-weight: bolder;
+  color: rgb(252, 250, 250);
+  text-shadow: 4px 3px 8px rgb(4, 4, 102);
+}
+.nav-item a {
+  font-size: 20px;
+  color: black;
+  margin-right: 9px;
+  font-family: "Roboto Serif", serif;
+  font-weight: 900;
+  text-shadow: #023e8a;
 }
 
-nav>ul>a>li:hover{
-    background-color: white;
-    border-radius: 10px;
+.nav-item a:hover {
+  color: #058da8;
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-item a:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+.navbar-toggler i:hover {
+  transform: none;
 }
 
-.contact-nav>ul>a>li{
-    padding: 7px;
-    margin: 4px;
+.nav_link:hover {
+  color: #1f6b87;
+}
+.main {
+  width: 90%;
+  margin: auto;
+}
+.achievement-heading {
+  color: black;
+  background-color: white;
+  margin: 5em auto 1em;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.achievement-page {
+  font-family: "Lora", serif;
+  background-color: white;
+  line-height: 1.5em;
+}
+.logo {
+  border-radius: 50%;
+  height: 51px;
+  width: 53px;
+}
+@media (min-width: 60rem) {
+  .container {
+    gap: 1em;
+  }
 }
