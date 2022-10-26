@@ -145,16 +145,16 @@ nav {
   font-family: "Zilla Slab", serif;
 }
 .aim {
-  color: #2d028a;
+  color: #023e8a;
   font-size: 25px;
   font-family: "Zilla Slab", serif;
 }
 .card {
-  border-radius: 56px;
-  background: linear-gradient(145deg, #41b6cd, #4dd8f4);
-  box-shadow:  14px 14px 28px #308596,
-               -14px -14px 28px #60ffff;
-              }
+  border-radius: 20px;
+  background: #eeeeee;
+  box-shadow: 20px 20px 60px #48cae4, -20px -20px 60px #ffffff;
+  border: none;
+}
 
 .card img {
   border-radius: 50%;
