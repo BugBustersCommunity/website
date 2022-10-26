@@ -150,10 +150,10 @@ nav {
   font-family: "Zilla Slab", serif;
 }
 .card {
-  border-radius: 20px;
-  background: #eeeeee;
-  box-shadow: 20px 20px 60px #48cae4, -20px -20px 60px #ffffff;
-  border: none;
+  border-radius: 47px;
+  background: linear-gradient(145deg, #41b6cd, #4dd8f4);
+  box-shadow:  20px 20px 46px #308596,
+               -20px -20px 46px #60ffff;
 }
 
 .card img {
